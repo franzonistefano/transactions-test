@@ -1,0 +1,102 @@
+@import "primereact/resources/themes/saga-blue/theme.css";
+@import "primereact/resources/primereact.min.css";
+
+/*  
+
+Glossary
+- color-o: it's the color with an additional opacity. By default it's 0.5.
+
+*/
+
+/**************************/
+/*    Color Variables     */
+/**************************/
+$white: #ffffff;
+$dark: rgb(32, 30, 30);
+$yellow: #ffd300;
+$yellow-o: rgb(255, 211, 0, 0.5);
+$dark: #222222;
+$dark-o: rgba(34, 34, 34, 0.5);
+$blue: #0d2633;
+$blue-o: rgb(13, 38, 51, 0.5);
+$green: #147735;
+$green-o: rgb(20, 119, 53, 0.5);
+$dark-loading: rgba(14, 13, 13, 0.8);
+$grey: #f3f3f3;
+$light-blue: #41c0f0;
+$light-blue-o: rgb(65, 192, 240, 0.5);
+
+/**************************/
+/*   General Variables    */
+/**************************/
+//Common
+$primaryColor: $light-blue;
+$primaryColorBlur: $light-blue-o;
+$primaryHover: $light-blue-o;
+$secondaryColor: $dark;
+$secondaryColorBlur: $dark-o;
+$secondaryHover: $dark-o;
+$thirdColor: $yellow;
+$thirdColorBlur: $yellow-o;
+$thirdHover: $yellow-o;
+$borderRadius: 50px;
+$borderRadiusSoft: 20px;
+$fieldWidth: 70%;
+$inputHeight: 42px;
+$fontSizeSmall: 0.6em;
+$fontSizeH1: 1.5em;
+$fontSizeH2: 1.2em;
+$fontSizeH3: 1em;
+$fontSizeH4: 0.8em;
+$fontSizeH5: 0.65em;
+$fontSizeP: 0.6em;
+$fontWeightBold: 700;
+$fontWeightNormal: 500;
+$fontWeightTiny: 350;
+
+//Typography
+$fontFamily: Raleway;
+$fontSize: 18px;
+$fontWeight: normal;
+$textColor: $dark;
+$textSecondaryColor: $primaryColor;
+$linkColor: $primaryColor;
+$strongText: 700;
+
+//Margin
+$marginMinTop: 10px;
+
+//Button
+$buttonBg: $primaryColor;
+$buttonBgHover: $secondaryColor;
+$buttonTextColor: $white;
+$buttonBorder: none;
+$buttonWidth: $fieldWidth;
+
+//Form
+$inputTextColor: $secondaryColor;
+$inputBorder: 1px solid $secondaryColor;
+$inputBorderColorHover: $primaryColor;
+$inputWidth: $fieldWidth;
+
+//CheckBox
+$checkboxBorder: 2px solid $secondaryColor;
+$checkboxActiveBorderColor: $secondaryColor;
+$checkboxActiveBg: $primaryColor;
+$checkboxShadow: 0 0 0 0.2rem $primaryColorBlur;
+
+//Card
+$cardShadow: 0 0 50px 0px $dark-o;
+
+//Dropdown
+$dropdownWidth: $fieldWidth;
+$dropdownBorderRadius: $borderRadius;
+$dropdownBoxShadow: 0 0 0 0;
+$dropdownActiveBg: $primaryColor;
+
+//Card
+$cardBorderRadius: $borderRadiusSoft;
+$cardMargin: 1em;
+
+//ProgressBar
+$progressbarBg: $thirdColor;

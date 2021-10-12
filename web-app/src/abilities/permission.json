@@ -1,0 +1,18 @@
+[
+    {
+        "action": "Read",
+        "subject": "Something"
+    },
+    {
+        "action": "Create",
+        "subject": "Something"
+    },
+    {
+        "action": "Upload",
+        "subject": "Something"
+    },
+    {
+        "action": "Delete",
+        "subject": "Something"
+    }
+]

@@ -1,0 +1,118 @@
+@import "./variables.scss";
+
+.GeneralStyle {
+    //General Typography
+    font-family: $fontFamily;
+    font-size: $fontSize;
+
+    .strong{
+        font-weight: $strongText;
+    }
+
+    .p-full-width {
+        width: 100% !important;
+    }
+
+    //Button
+    .p-small {
+        .p-button {
+            font-size: $fontSizeSmall;
+            min-width: 0px;
+            width: auto;
+        }
+    }
+
+    .p-button {
+        background-color: $primaryColor;
+        border: $buttonBorder;
+        color: $buttonTextColor;
+        border-radius: $borderRadius;
+        min-width: 100px;
+        width: auto;//$buttonWidth;
+        text-align: center;
+        align-items: center;
+    }
+
+    .p-button:enabled:hover {
+        background-color: $primaryHover;
+    }
+
+    .p-button:focus {
+        -webkit-box-shadow: 0 0 0 0;
+        box-shadow: 0 0 0 0;
+    }
+
+    .p-button:disabled {
+        background-color: $primaryColorBlur;
+    }
+
+    .p-button-label {
+        -ms-flex: 0 0 auto;
+        flex: 0 0 auto;
+    }
+
+    .p-button.p-button-outlined {
+        color: $primaryColor;
+    }
+
+    .p-button.p-button-outlined:enabled:hover {
+        background: rgba(33, 150, 243, 0.04);
+        color: $primaryColor;
+    }
+
+    
+    //Label
+    label {
+        margin-bottom: 0px;
+        margin-left: 5px;
+    }
+
+    //Links
+    a {
+        color: $linkColor;
+    }
+
+    //Backgrounds
+    .background-primary {
+        background-color: $primaryColor;
+    }
+
+    .background-dark {
+        background-color: $dark;
+    }
+
+    .background-yellow {
+        background-color: $yellow;
+    }
+
+    .background-grey {
+        background-color: $grey;
+    }
+
+    .background-white {
+        background-color: $white;
+    }
+
+    //Margin & Padding
+    .mb-field {
+        margin-bottom: 2%;
+    }
+
+    .line {
+        width: 50%;
+        margin: auto;
+        border-bottom: $inputBorder;
+    }
+
+    .line-full {
+        width: 100%;
+        margin: auto;
+        border-bottom: $inputBorder;
+    }
+
+    //Bordered Box
+    .bordered-box {
+        border: 1px solid $dark;
+    }
+    
+}

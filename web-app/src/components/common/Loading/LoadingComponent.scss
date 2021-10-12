@@ -1,0 +1,41 @@
+@import "../../../assets/theme/variables.scss";
+
+#Loading {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 8;
+    background: $dark-loading;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    .p-progress-spinner-circle {
+        -webkit-animation: ui-progress-spinner-color 6s ease-in-out infinite;
+        animation: ui-progress-spinner-color 6s ease-in-out infinite;
+    }
+
+    .strong {
+        color: $white;
+        margin-top: $marginMinTop;
+        text-align: center;
+    }
+}
+
+@keyframes ui-progress-spinner-color {
+    100%,
+    0% {
+        stroke: $yellow;
+    }
+    40% {
+        stroke: $blue;
+    }
+    66% {
+        stroke: $green;
+    }
+    80%,
+    90% {
+        stroke: $white;
+    }
+}

@@ -1,0 +1,83 @@
+{
+  "name": "fe-eni-esgp",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@casl/ability": "^4.1.6",
+    "@casl/react": "^2.1.1",
+    "@testing-library/jest-dom": "^5.11.6",
+    "@testing-library/react": "^11.2.2",
+    "@testing-library/user-event": "^12.5.0",
+    "@types/jest": "^26.0.18",
+    "@types/node": "^12.19.8",
+    "@types/react": "^16.14.2",
+    "@types/react-dom": "^16.9.10",
+    "@types/react-intl": "^3.0.0",
+    "dotenv-cli": "^4.0.0",
+    "firebase": "^8.2.0",
+    "lodash": "^4.17.20",
+    "loglevel": "^1.7.1",
+    "moment": "^2.29.1",
+    "primereact": "^5.0.2",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-intl": "^5.10.6",
+    "react-redux": "^7.2.2",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "4.0.1",
+    "react-transition-group": "^4.4.1",
+    "redux": "^4.0.5",
+    "redux-thunk": "^2.3.0",
+    "sass": "^1.30.0",
+    "typescript": "^4.1.2",
+    "web-vitals": "^0.2.4",
+    "workbox-background-sync": "^5.1.4",
+    "workbox-broadcast-update": "^5.1.4",
+    "workbox-cacheable-response": "^5.1.4",
+    "workbox-core": "^5.1.4",
+    "workbox-expiration": "^5.1.4",
+    "workbox-google-analytics": "^5.1.4",
+    "workbox-navigation-preload": "^5.1.4",
+    "workbox-precaching": "^5.1.4",
+    "workbox-range-requests": "^5.1.4",
+    "workbox-routing": "^5.1.4",
+    "workbox-strategies": "^5.1.4",
+    "workbox-streams": "^5.1.4"
+  },
+  "scripts": {
+    "start": "dotenv -e .env react-scripts start",
+    "start-dev": "dotenv -e .env.development react-scripts start",
+    "start-qas": "dotenv -e .env.quality react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "start-sw": "http-server ./build",
+    "cypress:open": "cypress open"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@types/lodash": "^4.14.165",
+    "@types/react-redux": "^7.1.11",
+    "@types/react-router-dom": "^5.1.6",
+    "cypress": "^6.1.0",
+    "http-server": "^0.12.3",
+    "redux-devtools-extension": "^2.13.8"
+  }
+}
