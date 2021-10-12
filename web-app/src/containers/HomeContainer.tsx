@@ -6,8 +6,14 @@ const HomeContainer = (props: any) => {
 
   return (
     <>
-      {transactions !== null && summarizeTx !== null && (
+      {transactions !== null && summarizeTx !== null ? (
         <HomeComponent transactions={transactions} summarizes={summarizeTx} />
+      ) : (
+        <div className="row">
+          <div className="col-12 text-center">
+            <h1>No data available</h1>
+          </div>
+        </div>
       )}
     </>
   );

@@ -56,7 +56,7 @@ const HomeComponent = ({ transactions, summarizes }: HomepageProps) => {
       <div className="col-12 mt-4 text-center">
         <h1>Summarized Table</h1>
       </div>
-      <div className="col-10">
+      <div className="col-10 mb-4">
         {summarizes !== null && (
           <DataTable value={summarizes}>
             <Column field="currency" header="Currency"></Column>
