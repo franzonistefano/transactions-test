@@ -1,5 +1,6 @@
 import {EurRate, Transaction} from '../../interface/custom/Transactions'
 import { TransactionsApi } from '../api/TransactionsApi'
+import { statusApi } from '../statusApi'
 import { GET_EUR_RATES, GET_TRANSACTIONS } from '../type/transactions'
 
 
@@ -11,8 +12,13 @@ export function getTransactions() {
     return (dispatch: any) => {
         TransactionsApi.GetTransactions()
             .then((response: any) => {
-                if (response.status === 200)
-                    return response.json()
+                if (statusApi.CheckStatusGetSuccess(response.status)) return response.json()
+                else if (
+                  statusApi.checkForbidden(response.status) ||
+                  statusApi.CheckStatusGetFailure(response.status)
+                )
+                  return null
+                return null
             })
             .then((res: any) => {
                 dispatch(storeTransactions(res !== null ? res.transactions : res))
@@ -31,8 +37,13 @@ export function getEurRate() {
     return (dispatch: any) => {
         TransactionsApi.GetEurRates()
             .then((response: any) => {
-                if (response.status === 200)
-                    return response.json()
+                if (statusApi.CheckStatusGetSuccess(response.status)) return response.json()
+                else if (
+                  statusApi.checkForbidden(response.status) ||
+                  statusApi.CheckStatusGetFailure(response.status)
+                )
+                  return null
+                return null
             })
             .then((res: any) => {
                 dispatch(storeEurRate(res))
